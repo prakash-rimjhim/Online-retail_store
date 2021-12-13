@@ -1,0 +1,10 @@
+
+{% extends 'retail_store/base.html' %}
+
+{% block content %}
+        {% for product in products %}
+            <article>
+                {{product.productName}}, {{product.productId}}, {{product.availableQuantity}}
+            </article>
+        {% endfor %}
+{% endblock content %}
